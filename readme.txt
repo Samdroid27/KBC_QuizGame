@@ -1,17 +1,18 @@
-How to transfer database:
- 
- Adding sql file to database
- 1. create new database say abc
- 2.open cmd in administator mode
- 3.change path to C:\Program Files (x86)\MySQL\MySQL Server 5.1\bin
- 4.type
-    mysql -uroot -p abc<"path name where file is stored"
-5.type password	
-	
-	creating sql file from database
- 1. create new database say abc with some tables
- 2.open cmd in administator mode
- 3.change path to C:\Program Files (x86)\MySQL\MySQL Server 5.1\bin
- 4.type
-    mysqldump -uroot -p abc>"path name where file to be  stored"
-	5.type password
+									KBC QUIZ GAME
+
+GUI layout
+
+1. Login Page
+	1.1 New user
+	1.2 Existing User
+2. Game Play 
+3. High Scores
+4. Modify Question Bank(Admin)
+5. About 
+6. Admin Login
+
+							Game Play
+1. 15 Questions randomly selected from database different for each level
+2. 4 lifelines - Audience Poll,50:50,Double Dip, ask the expert
+3. Quit at any moment
+4. High scores saved.
