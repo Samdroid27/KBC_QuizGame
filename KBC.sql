@@ -1,0 +1,591 @@
+-- MySQL dump 10.13  Distrib 5.1.53, for Win32 (ia32)
+--
+-- Host: localhost    Database: shivam
+-- ------------------------------------------------------
+-- Server version	5.1.33-community
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `curpl`
+--
+
+DROP TABLE IF EXISTS `curpl`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `curpl` (
+  `sno` int(1) DEFAULT '1',
+  `name` varchar(20) DEFAULT NULL,
+  `age` int(3) DEFAULT NULL,
+  `gender` varchar(1) DEFAULT NULL,
+  `mno` varchar(20) NOT NULL DEFAULT '',
+  `wamt` varchar(20) DEFAULT NULL,
+  PRIMARY KEY (`mno`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `curpl`
+--
+
+LOCK TABLES `curpl` WRITE;
+/*!40000 ALTER TABLE `curpl` DISABLE KEYS */;
+/*!40000 ALTER TABLE `curpl` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `highsc`
+--
+
+DROP TABLE IF EXISTS `highsc`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `highsc` (
+  `name` varchar(20) DEFAULT NULL,
+  `age` int(3) DEFAULT NULL,
+  `gender` varchar(1) DEFAULT NULL,
+  `mno` varchar(20) NOT NULL DEFAULT '',
+  `wamt` varchar(20) DEFAULT NULL,
+  PRIMARY KEY (`mno`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `highsc`
+--
+
+LOCK TABLES `highsc` WRITE;
+/*!40000 ALTER TABLE `highsc` DISABLE KEYS */;
+INSERT INTO `highsc` VALUES ('Suryanshu Singh',18,'m','7376895195','10000'),('sahil',16,'m','7388112119','30000000'),('Anand Patel',17,'m','7460971863','640000'),('77',77,'m','77','10000'),('Kamya',16,'f','7870291032','30000000'),('akshat',17,'m','7894561236','10000'),('A.K Singh',14,'m','8299644011','320000'),('shubham',21,'m','8299825380','70000000'),('Aman',17,'m','8543990810','320000'),('Hemant',36,'m','8799590340','10000'),('Harshika',17,'f','8873337980','160000'),('lokesh',17,'m','8887850354','320000'),('satyam',17,'m','8934034999','10000'),('Aatreyo',17,'m','9044137751','10000'),('Isha',17,'m','9118156490','10000'),('amresh',23,'m','9125363720','10000'),('amiya',17,'m','9234554363','10000'),('Parth',16,'m','9415658604','5000000'),('Mudit Yadav',17,'m','9415751901','70000000'),('Ankur Srivastava',17,'m','9434537001','70000000'),('vinay',40,'m','9450016025','5000'),('utkarsh',17,'m','9450753839','320000'),('Abhinav',16,'m','9452748905','70000000'),('aditya',21,'m','94547847054','10000'),('utkarsh',17,'m','9454972283','320000'),('Satvik shubham',17,'m','9651709825','320000'),('ANSHU',17,'m','9771898456','320000'),('shivam',17,'m','9838785935','70000000'),('Kartikey',16,'m','9999999999','2500000');
+/*!40000 ALTER TABLE `highsc` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `q10000`
+--
+
+DROP TABLE IF EXISTS `q10000`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `q10000` (
+  `qno` int(3) DEFAULT NULL,
+  `ques` varchar(256) DEFAULT NULL,
+  `opt_a` varchar(50) DEFAULT NULL,
+  `opt_b` varchar(50) DEFAULT NULL,
+  `opt_c` varchar(50) DEFAULT NULL,
+  `opt_d` varchar(50) DEFAULT NULL,
+  `rt_opt` varchar(1) DEFAULT NULL,
+  `ex_opt50` varchar(1) DEFAULT NULL,
+  `aud_a` int(3) DEFAULT NULL,
+  `aud_b` int(3) DEFAULT NULL,
+  `aud_c` int(3) DEFAULT NULL,
+  `aud_d` int(3) DEFAULT NULL,
+  `ex_ad` varchar(256) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `q10000`
+--
+
+LOCK TABLES `q10000` WRITE;
+/*!40000 ALTER TABLE `q10000` DISABLE KEYS */;
+INSERT INTO `q10000` VALUES (1,'WHICH RIVER FLOWS THROUGH CAPITAL OF INDIA?','GANGA','YAMUNA','SABARMATI','NARMADA','B','A',1,99,0,0,'YAMUNA IS THE CORRECT ANSWER I M SURE...'),(2,'IN WHICH YEAR INDIA WILL OBSERVE ITS BICENETARY OF ITS INDEPENDENCE?','2047','2147','2247','2097','B','C',1,99,0,0,'ITS  2147...'),(3,'THE SANCHI STUPA IS A PLACE OF PILGRIMAGE FOR WHICH RELIGIOUS COMMUNITY?','SIKHS','BUDDHISTS','CHRISTIANS','MUSLIMS','B','A',5,92,3,0,'I M SURE ITS B-BUDDHISTS'),(4,'WHICH PART OF COFFEE PLANT IS USED TO PREPARE THE BEVERAGE','LEAVES','BEANS','BARK','ROOTS','B','A',10,90,0,0,'COFFEE BEANS ARE USED TO PREPARE THE BEVERAGE'),(5,'WHICH FRUIT IS DRIED TO MAKE RAISINS OR \'KISHMISH\'?','FIGS','DATES','BERRIES','GRAPES','D','B',0,5,0,95,'ITS D-GRAPES'),(6,'IN THE RAMAYANA ,WHO KILLED BALI?','RAM','HANUMAN','SUGREEV','JAMVANT','A','C',85,5,10,0,'RAM KILLED BALI BY HIS ARROW'),(7,'IN MAHABHARAT,WHO KILLED KARNA?','ARJUNA','KRISHNA','BHISMA','INDRA','A','D',90,5,4,1,'ITS A-ARJUNA'),(8,'NAME THE FOUNDER OF THE BRAND \'PATANJALI\'?','BABA ASARAM','SRI SRI RAVISHANKAR','BABA RAMDEV','NARENDRA MODI','C','B',0,1,99,0,'DON\'T U KNOW ITS C-RAMDEV'),(9,'WHAT IS THE FULL FORM OF SIM?','SUBSCRIBER IDENTITY MODULE','SUBSCRIBER IDENTITY MODULATOR','SEARCH IDENTITY MODULATOR','SUBSCRIBE IDENTITY MODULE','A','B',80,10,0,10,'ITS A....'),(10,'WHAT IS THE CAPITAL OF UTTAR PRADESH','LUCKNOW','VARANASI','KANPUR','DEHRADUN','A','C',100,0,0,0,'LUCKNOW...');
+/*!40000 ALTER TABLE `q10000` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `q10000000`
+--
+
+DROP TABLE IF EXISTS `q10000000`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `q10000000` (
+  `qno` int(3) DEFAULT NULL,
+  `ques` varchar(256) DEFAULT NULL,
+  `opt_a` varchar(50) DEFAULT NULL,
+  `opt_b` varchar(50) DEFAULT NULL,
+  `opt_c` varchar(50) DEFAULT NULL,
+  `opt_d` varchar(50) DEFAULT NULL,
+  `rt_opt` varchar(1) DEFAULT NULL,
+  `ex_opt50` varchar(1) DEFAULT NULL,
+  `aud_a` int(3) DEFAULT NULL,
+  `aud_b` int(3) DEFAULT NULL,
+  `aud_c` int(3) DEFAULT NULL,
+  `aud_d` int(3) DEFAULT NULL,
+  `ex_ad` varchar(256) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `q10000000`
+--
+
+LOCK TABLES `q10000000` WRITE;
+/*!40000 ALTER TABLE `q10000000` DISABLE KEYS */;
+INSERT INTO `q10000000` VALUES (1,'INDIA WON ITS FIRST OLYMPIC HOCKEY GOLD IN...','1928','1932','1948','1940','A','B',34,32,28,6,'I\'M NOT SURE BUT I THINK ITS A-1928'),(2,'WHICH INDIAN CITY MANUFACTURED BALLS FOR THE WORLD CUP FOOTBALL?','LUDHIANA','MUMBAI','JALANDHAR','CHENNAI','C','A',24,4,62,10,'HMM.. I THINK JALANDHAR IS THE CORRECT ANSWER!!!'),(3,'ON WHICH SPACECRAFT DID RAKESH SHARMA MAKE HIS HISTORIC TRIP TO SPACE?','APOLLO 11','SOYUZ-T','PROGESS 1','SALYUT 7','B','A',22,26,25,27,'HMM.IT CAN BE A OR B..........');
+/*!40000 ALTER TABLE `q10000000` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `q1250000`
+--
+
+DROP TABLE IF EXISTS `q1250000`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `q1250000` (
+  `qno` int(3) DEFAULT NULL,
+  `ques` varchar(256) DEFAULT NULL,
+  `opt_a` varchar(50) DEFAULT NULL,
+  `opt_b` varchar(50) DEFAULT NULL,
+  `opt_c` varchar(50) DEFAULT NULL,
+  `opt_d` varchar(50) DEFAULT NULL,
+  `rt_opt` varchar(1) DEFAULT NULL,
+  `ex_opt50` varchar(1) DEFAULT NULL,
+  `aud_a` int(3) DEFAULT NULL,
+  `aud_b` int(3) DEFAULT NULL,
+  `aud_c` int(3) DEFAULT NULL,
+  `aud_d` int(3) DEFAULT NULL,
+  `ex_ad` varchar(256) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `q1250000`
+--
+
+LOCK TABLES `q1250000` WRITE;
+/*!40000 ALTER TABLE `q1250000` DISABLE KEYS */;
+INSERT INTO `q1250000` VALUES (1,'IN WHAT COUNTRY DO YOU FIND THE KIWI?','NEW ZEALAND','AUSTRALIA','BRAZIL','PAPUA NEW GUINEA','A','B',42,36,18,4,'I\'M CONFUSED...IT MAY BE NEW ZEALAND OR AUSTRALIA!!YOU SHOULD DECIDE....'),(2,'WHICH PF THESE FILMS WAS ASHUTOSH GOWARIKAR\'S DIRECTORAL DEBUT?','JUNG','PEHLA NASHA','SWADES','AFSANA PYAR KA','B','C',34,42,13,11,'I THINK IT WAS PEHLA NASHA>>>>'),(3,'J P DUTTA\'S LoC IS BASED ON WHICH WAR?','INDO - PAK WAR 1971','KARGIL WAR','INDO-CHINA WAR','INDO -PAK WAR 1965','B','D',23,27,24,26,'HMMM. I THINK KARGIL WAR SHOULD BE THE CORRECT ANSWER'),(4,'WHO IS THE ONLY WOMAN TO HAVE RECIEVED TWO NOBEL PRIZES?','MARIE CURIE','AING SAN SU KYI','MOTHER TERESA','PEARL S BUCK','A','D',31,21,30,18,'MARIE CURIE .....OF COURSE!!!!!'),(5,'WHO WAS THE FIRST PERSON TO WALK IN SPACE?','ALEXEI LEONOV','JOHN GLENN','LEONID KIZIM','YURI RAMANEKO','A','D',27,20,29,24,'HMMM..... I AM NOT SURE BUT IT CAN BE OPTION A OR D'),(6,'WHAT NAME IS GIVEN TO A PERSON WHO CAN RECITE THE ENTIRE KORAN FROM MEMORY?','MUTAWALI','HAFIZ','MAULANA','KHATIB','B','C',22,26,28,24,'HMM...NOT SURE BUT MAY BE OPT. B'),(7,'WHICH COURT POET WROTE THE AKBARNAMA?','AKBAR','ABUL FAZL','BIRBAL','FIRDAUSI','B','D',20,30,25,25,'HMM...ABUL FAZL FOR SURE!!!!!'),(8,'WHICH INDIAN RIVER IS ALSO KNOWN AS KALINDI?','YAMUNA','SARAYU','GANGA','GODAVARI','A','B',27,27,22,24,'I THINK ITS A YAMUNA'),(9,'WHAT NAME WAS TULSIDAS GIVEN AT BIRTH?','ATMARAM','RAMBOLA','TULSIRAM','PURANDHAR DAS','B','A',24,27,22,27,'MAY BE OPTION A OR B!!!'),(10,'IN MAHABHARAT, WHO CREATED THE \'CHAKRAVYUH\'','DRONACHARYA','KRIPACHARYA','JAYADRATHA','KARNA','A','D',48,10,20,22,'DON\'T YOU KNOW IT....ITS A!!!');
+/*!40000 ALTER TABLE `q1250000` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `q160000`
+--
+
+DROP TABLE IF EXISTS `q160000`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `q160000` (
+  `qno` int(3) DEFAULT NULL,
+  `ques` varchar(256) DEFAULT NULL,
+  `opt_a` varchar(50) DEFAULT NULL,
+  `opt_b` varchar(50) DEFAULT NULL,
+  `opt_c` varchar(50) DEFAULT NULL,
+  `opt_d` varchar(50) DEFAULT NULL,
+  `rt_opt` varchar(1) DEFAULT NULL,
+  `ex_opt50` varchar(1) DEFAULT NULL,
+  `aud_a` int(3) DEFAULT NULL,
+  `aud_b` int(3) DEFAULT NULL,
+  `aud_c` int(3) DEFAULT NULL,
+  `aud_d` int(3) DEFAULT NULL,
+  `ex_ad` varchar(256) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `q160000`
+--
+
+LOCK TABLES `q160000` WRITE;
+/*!40000 ALTER TABLE `q160000` DISABLE KEYS */;
+INSERT INTO `q160000` VALUES (1,'WHICH IS THE HIGHEST WATERFALL?','ANGEL FALLS','NIAGARA FALLS','KHONE FALLS','TUGELA FALLS','A','B',52,32,8,8,'WELL!! ITS A-ANGEL FALLS'),(2,'MAIN CIRCUIT BOARD IN A COMPUTER IS --','MOTHER BOARD','HIGHLIGHT','SELECT','DECODER','A','D',88,0,0,12,'MOTHER BOARD...SURE!!!!'),(3,'WHERE IS FORT WILLIAM LOCATED?','MYSORE','CHENNAI','GOA','KOLKATA','D','C',23,16,12,49,'HMM..IT IS LOCATED IN KOLKATA!!!!'),(4,'WHAT IS THE CAPITAL OF AUSTRALIA?','CANBERRA','MELBOURNE','SYDNEY','PERTH','A','C',49,12,31,8,'HMM.. ITS A-CANBERRA'),(5,'ARTICLE 370 OF THE UNION CONSTITUTION WAS ADOPTED IN WHICH YEAR?','1947','1948','1949','1950','C','D',9,11,42,38,'I THINK IT IS 1949..'),(6,'WHAT IS THE CAPITAL OF THE COUNTRY,MEXICO?','MEXICO CITY','GUADALAJARA','SANTA FE','SAN JUAN','A','C',67,5,15,13,'I \'M SURE ITS OPTION A'),(7,'WHO KILLED INDRAJIT,SON OF RAVANA?','RAM','VIBHEESHAN','HANUMAN','LAXMAN','D','C',2,4,27,67,'I THINK IT\'S LAXMAN'),(8,'WHO WAS LAXMAN\'S TWIN BROTHER?','SHRI RAMA','SHATRUGHANA','GUHA','BHARATA','B','D',2,92,0,6,'OF COUSRE ..SHATRUGHANA'),(9,'TEA IS MUCH GROWN IN?','KERALA','KARNATAKA','TAMIL NADU','ASSAM','D','B',13,28,14,45,'ASSAM ..FOR SURE!!!!!!!'),(10,'WHO IS KNOWN AS THE GOD OF CRICKET?','BRIAN LARA','SACHIN TENDULKAR','DON BRADMAN','MAHENDRA SINGH DHONI','B','D',4,66,8,22,'ITS B........');
+/*!40000 ALTER TABLE `q160000` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `q20000`
+--
+
+DROP TABLE IF EXISTS `q20000`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `q20000` (
+  `qno` int(3) DEFAULT NULL,
+  `ques` varchar(256) DEFAULT NULL,
+  `opt_a` varchar(50) DEFAULT NULL,
+  `opt_b` varchar(50) DEFAULT NULL,
+  `opt_c` varchar(50) DEFAULT NULL,
+  `opt_d` varchar(50) DEFAULT NULL,
+  `rt_opt` varchar(1) DEFAULT NULL,
+  `ex_opt50` varchar(1) DEFAULT NULL,
+  `aud_a` int(3) DEFAULT NULL,
+  `aud_b` int(3) DEFAULT NULL,
+  `aud_c` int(3) DEFAULT NULL,
+  `aud_d` int(3) DEFAULT NULL,
+  `ex_ad` varchar(256) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `q20000`
+--
+
+LOCK TABLES `q20000` WRITE;
+/*!40000 ALTER TABLE `q20000` DISABLE KEYS */;
+INSERT INTO `q20000` VALUES (1,'What is the middle name of the world class batsman \'sachin tendulkar\'?','ramendra','ramesh','mahesh','surendra','b','a',5,85,5,5,'ITS SACHIN RAMESH TENDULKAR!!!!'),(2,'WHAT DOES THE FIRST TWO NUMERIC DIGITS IN VEHICLE NO. \"TN 01 AX 0868\" REFER \'01\'  TO?','STATE OF REGISTRATION','DISTRICT OF REGISTRATION','COUNTRY OF REGISTRATION','SERIAL NO','B','D',2,80,0,18,'IN THIS REGISTRATION NO 01 STANDS FOR DISTRICT OF REGISTRATION'),(3,'AFTER WHOSE NAME OF THE HINDI CALENDER IS NAMED?','MAHARAJA VIKRAMADITYA','CHANDRAGUPTA MAURYA','PRINCE SIDDHARTH','JALLALUDDIN MOHAMMAD AKBAR','A','B',98,2,0,0,'HINDI CALENDER IS NAMED AS VIKRAM SAMVAT'),(4,'WHICH GOD BEARS GANGA IN HIS HAIRS?','LORD KRISHNA','INDRA','VARUNA','LORD SHIVA','D','A',2,2,2,94,'ITS D-LORD SHIVA'),(5,'FOR WHICH MAJOR TEXTILE INDUSTRY MIRZAPUR IS KNOWN FOR?','BEDSHEETS','CARPETS','BAGS','SWEATERS','B','D',0,90,2,8,'MIRZAPUR IS FOMAOUS FOR ITS CARPETS'),(6,'who is the singer of the song \'pani da rang\' of the film vicky donor?','ARJUN KAPOOR','AYUSHMAAN KHURANA','MIKA SINGH','MEET BROTHERS','B','D',2,92,2,4,'AYUSHMAAN BOTH ACTED IN AND SANG THE SONG!!! TH'),(7,'\'ARDHANARESHWAR\' ROOP OR THE HALF MALE AND FEMALE FORM CONSISTS-','SHIVA-PARVATI','RAM-SITA','VISHNU-LAXMI','BRAHMA-SARASWATI','A','C',97,0,3,0,'ARDHANARESHWAR IS A FORM OF OF LORD SHIVA AND GODESS PARVATI'),(8,'WHO IS THE FOUNDER OF MICROSOFT?','TIM BERNERS LEE','MARK ZUKERBERG','SATYA NADELA','BILL GATES','D','B',0,8,7,85,'OF COURSE !! BILL GATES'),(9,'WHICH OF THESE IS KNOWN AS PINK CITY OF INDIA?','JAIPUR','UDAIPUR','MUMBAI','PUNE','A','B',90,10,0,0,'JAIPUR IS KNOWN AS PINK CITY OF INDIA.....'),(10,'COMPLETE THE DIALOGUE FROM THE FILM \'JOLLY LLB 2\'  - \'MUSKURAIYE AAP______  ME HAI\'','COURT','BHARAT','LUCKNOW','UP','C','D',0,3,92,5,'THE DIALOGUE WAS \'MUSKURAIYE AAP LUCKNOW ME HAI\'');
+/*!40000 ALTER TABLE `q20000` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `q2500000`
+--
+
+DROP TABLE IF EXISTS `q2500000`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `q2500000` (
+  `qno` int(3) DEFAULT NULL,
+  `ques` varchar(256) DEFAULT NULL,
+  `opt_a` varchar(50) DEFAULT NULL,
+  `opt_b` varchar(50) DEFAULT NULL,
+  `opt_c` varchar(50) DEFAULT NULL,
+  `opt_d` varchar(50) DEFAULT NULL,
+  `rt_opt` varchar(1) DEFAULT NULL,
+  `ex_opt50` varchar(1) DEFAULT NULL,
+  `aud_a` int(3) DEFAULT NULL,
+  `aud_b` int(3) DEFAULT NULL,
+  `aud_c` int(3) DEFAULT NULL,
+  `aud_d` int(3) DEFAULT NULL,
+  `ex_ad` varchar(256) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `q2500000`
+--
+
+LOCK TABLES `q2500000` WRITE;
+/*!40000 ALTER TABLE `q2500000` DISABLE KEYS */;
+INSERT INTO `q2500000` VALUES (1,'JAVA WAS ORIGINALLY INVENTED BY','SUN','MICROSOFT','ORACLE','NOVELL','A','C',43,11,38,8,'YA!! ITS SUN MICOSYSTEMS....'),(2,'WHICH COUNTRY WON THE CRICKET WORLD CUP IN 1999?','ENGLAND','SOUTH AFRICA','PAKISTAN','AUSTRALIA','D','A',22,23,21,34,'WELL I DON\'T REMEMBER ACTUALLY..BUT IT MAY BE AUSTRALIA'),(3,'HOW MANY ONE DAY \'MAN OF MATCH AWRDS\' ,SACHIN HAD RECEIVED?','85','100','75','50','C','B',5,35,35,25,'MAY BE......C!!! OR B!!!'),(4,'Which of these is a train run by Indian Railways?','Royal Palace ','Royal Queen','Royal Orient','Royal Safari','A','A',29,27,24,20,'Its A or B ...A bit confused between palace and Queen');
+/*!40000 ALTER TABLE `q2500000` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `q30000000`
+--
+
+DROP TABLE IF EXISTS `q30000000`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `q30000000` (
+  `qno` int(3) DEFAULT NULL,
+  `ques` varchar(256) DEFAULT NULL,
+  `opt_a` varchar(50) DEFAULT NULL,
+  `opt_b` varchar(50) DEFAULT NULL,
+  `opt_c` varchar(50) DEFAULT NULL,
+  `opt_d` varchar(50) DEFAULT NULL,
+  `rt_opt` varchar(1) DEFAULT NULL,
+  `ex_opt50` varchar(1) DEFAULT NULL,
+  `aud_a` int(3) DEFAULT NULL,
+  `aud_b` int(3) DEFAULT NULL,
+  `aud_c` int(3) DEFAULT NULL,
+  `aud_d` int(3) DEFAULT NULL,
+  `ex_ad` varchar(256) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `q30000000`
+--
+
+LOCK TABLES `q30000000` WRITE;
+/*!40000 ALTER TABLE `q30000000` DISABLE KEYS */;
+INSERT INTO `q30000000` VALUES (1,'What  words  were  inscribed  on  the  first  postage  stamp issued  in  independent  India?','Vande  Matram','Satyamev  Jayate','Jai hind','Azad  Hind','C','B',27,26,24,23,'I think it may be Jai hind!!!'),(2,'Who was independent India first ambassador to the USSR?','Sarojini Naidu','S Radhakrishnan','Acharya Kriplani','Vijayalakshami Pandit','D','C',25,24,25,26,'Its A ...I Think');
+/*!40000 ALTER TABLE `q30000000` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `q320000`
+--
+
+DROP TABLE IF EXISTS `q320000`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `q320000` (
+  `qno` int(3) DEFAULT NULL,
+  `ques` varchar(256) DEFAULT NULL,
+  `opt_a` varchar(50) DEFAULT NULL,
+  `opt_b` varchar(50) DEFAULT NULL,
+  `opt_c` varchar(50) DEFAULT NULL,
+  `opt_d` varchar(50) DEFAULT NULL,
+  `rt_opt` varchar(1) DEFAULT NULL,
+  `ex_opt50` varchar(1) DEFAULT NULL,
+  `aud_a` int(3) DEFAULT NULL,
+  `aud_b` int(3) DEFAULT NULL,
+  `aud_c` int(3) DEFAULT NULL,
+  `aud_d` int(3) DEFAULT NULL,
+  `ex_ad` varchar(256) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `q320000`
+--
+
+LOCK TABLES `q320000` WRITE;
+/*!40000 ALTER TABLE `q320000` DISABLE KEYS */;
+INSERT INTO `q320000` VALUES (1,'WHICH ASTRONOMER\'S TREATISE WAS NAMED \'PANCHASIDDHANTIKA\'?','VARAHMIHIRA','GARGI','ARYABHATTA','BRAHMAGUPTA','A','D',48,12,24,16,'I THINK ITS-A -VARAHMIHIRA'),(2,'WHAT IS THE NAME OF INDIA\'S NATIONAL AQUATIC ANIMAL?','SHARK','CROCODILE','RIVER DOLPHIN','BLUE WHALE','C','D',5,12,50,33,'RIVER DOLPHIN...I\'M SURE'),(3,'LOCATED IN INDIA IT IS THE ASIA\'S LARGEST RESIDENTIAL UNIVERSITY.  NAME IT..?','JAWAHARLAL NEHRU UNIVERSITY','ANNA UNIVERSITY','BANARAS HINDU UNIVERSITY','THE UTKAL UNIVERSITY','C','A',12,4,75,9,'OF COURSE BHU......'),(4,'NAME THE ANNUAL FAIR OF RAJASTHAN THAT IS FAMOUS FOR IT\'S CAMEL TRADING EVENT?','PUSHKAR MELA','KUMBH MELA','SURAJ KUND MELA','TARNETAR MELA','A','C',88,2,4,5,'<<<<PUSHKAR MELA>>>>'),(5,'WHICH ANIMAL IS THE MAIN ATTRACTION IN ASSAM\'S KAZIRANGA NATIONAL PARK?','GIRAFFE','ZEBRA','THE ONE HORNED RHINOCEROS','LION','C','B',2,12,78,8,'KAZIRANGA NATIONAL PARK IS FAMOUS FOR ITS ONE HORNED RHINOCEROS...'),(6,'IN WHICH MOUNTAIN DOES THE SIACHEN GLACIER LIE?','HIMALAYA','KARAKORAM','KUNLUN SHAN','HINDU KUSH','B','A',32,37,14,17,'HMM.I THINK ITS B.....'),(7,'WHAT IS THE CURRENCY OF AFGHANISTAN?','RIYAL','AFGHANI','DIRHAM','RUPIAH','B','C',20,44,11,25,'AFGHANI FOR SURE.'),(8,'WHICH DYNASTY RULED DELHI IMMEDIATELY AFTER THE TUGHLAQS?','SAYYID','LODI','MUGHAL','KHILJI','A','B',38,15,17,30,'ITS A SAYYID....'),(9,'WHAT IS THE MINIMUM AGE TO BE ELIGIBLE AS PRESIDENT OF INDIA?','25 YEARS','30 YEARS','35 YEARS','50 YEARS','C','D',37,19,37,7,'35 YEARS  FOR SURE'),(10,'IN AUSTRALIA, WHAT ARE MCG AND SCG NAMES OF?','ANABOLIC STEROIDS','CRICKET STADIUMS','KANGAROO PARKS','ROCKS BANDS','B','D',17,49,21,13,'ITS B..........');
+/*!40000 ALTER TABLE `q320000` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `q40000`
+--
+
+DROP TABLE IF EXISTS `q40000`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `q40000` (
+  `qno` int(3) DEFAULT NULL,
+  `ques` varchar(256) DEFAULT NULL,
+  `opt_a` varchar(50) DEFAULT NULL,
+  `opt_b` varchar(50) DEFAULT NULL,
+  `opt_c` varchar(50) DEFAULT NULL,
+  `opt_d` varchar(50) DEFAULT NULL,
+  `rt_opt` varchar(1) DEFAULT NULL,
+  `ex_opt50` varchar(1) DEFAULT NULL,
+  `aud_a` int(3) DEFAULT NULL,
+  `aud_b` int(3) DEFAULT NULL,
+  `aud_c` int(3) DEFAULT NULL,
+  `aud_d` int(3) DEFAULT NULL,
+  `ex_ad` varchar(256) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `q40000`
+--
+
+LOCK TABLES `q40000` WRITE;
+/*!40000 ALTER TABLE `q40000` DISABLE KEYS */;
+INSERT INTO `q40000` VALUES (1,'WHICH OF THESE IS KNOWN AS SUGAR BOWL OF THE WORLD?','CUBA','INDIA','CHINA','BANGLADESH','A','B',80,10,6,4,'HMMM....I THINK ITS CUBA!!'),(2,'WHICH OF THESE IS KNOWN AS LAND OF WHITE ELEPHANTS?','PARIS','SOUTH AFRICA','THAILAND','INDIA','C','B',0,9,76,15,'HMM..I\'M NOT SURE BUT ITS THAILAND I GUESS!!'),(3,'WHICH OF THESE IS KNOWN AS THE LAND OF RISING SUN?','JAPAN','INDIA','CHINA','NEW ZEALAND','A','D',89,1,4,6,'OF COURSE !!!JAPAN'),(4,'WHICH OF THESE PHRASES HAS A REFERENCE TO WAR?','MAHABHARAT MACHANA','PURANA PADHNA','UPANISHAD UTHANA ','RAMAYAN RACHANA','A','D',87,2,10,1,'MAHABHARAT MACHANA MEANS TO CREATE A SCENE LIKE MAHABHARATA...A WAR'),(5,'WHICH NEWSPAPER WAS STARTED BY BALGANGADHAR TILAK,KNOWN AS LOKMANYA,TO SERVE THE CAUSE OF THE INDIAN FREEDOM STRUGGLE?','FREE HINDUSTAN','SWADESHMITRA','GHADHAR','KESRI','D','B',13,38,7,42,'I KNOW ITS THE WELL KNOWN KESRI'),(6,'IN WHICH YEAR DID MILKHA SINGH WIN THE FIRST NATIONAL TITLE IN THE 400M RACE?','1955','1956','1957','1970','C','B',6,4,88,2,'WELL I THINK ITS C-1957'),(7,'IN WHICH CENTUARY DID PORTUGUESE MERCHANTS FIRST LAND IN GOA?','14th','15th','17th','16th','b','d',22,65,8,5,'I HOPE ITS 15TH CENTUARY...'),(8,'WHICH IS THE HEADQUATERS OF THE MISSIONARIES OF CHARITY FOUNDED BY MOTHER TERESA?','ASHA SADAN','SHISHU BHAWAN','SHANTI NAGAR','NIRMAL HRIDAY','D','B',15,16,14,55,'I KNOW ITS D-NIRMAL HRIDAY'),(9,'THE PAL IN LAL,BAL,PAL WAS?','BAL GANGADHAR TILAK','PALJI','LALA LAJPAT RAI','BIPIN CHANDRA PAL','D','B',6,4,2,88,'WELL I THINK YOU SHOULD KNOW IT ,ITS BIPIN CHANDRA PAL'),(10,'WHICH OF THE FOLLOWING MUSICAL INSTRUMENTS IS NOT OF FOREIGN ORIGIN?','TABLA','SITAR','VIOLIN','FLUTE','D','B',15,16,14,55,'FLUTE...I THINK');
+/*!40000 ALTER TABLE `q40000` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `q5000`
+--
+
+DROP TABLE IF EXISTS `q5000`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `q5000` (
+  `qno` int(3) DEFAULT NULL,
+  `ques` varchar(256) DEFAULT NULL,
+  `opt_a` varchar(50) DEFAULT NULL,
+  `opt_b` varchar(50) DEFAULT NULL,
+  `opt_c` varchar(50) DEFAULT NULL,
+  `opt_d` varchar(50) DEFAULT NULL,
+  `rt_opt` varchar(1) DEFAULT NULL,
+  `ex_opt50` varchar(1) DEFAULT NULL,
+  `aud_a` int(3) DEFAULT NULL,
+  `aud_b` int(3) DEFAULT NULL,
+  `aud_c` int(3) DEFAULT NULL,
+  `aud_d` int(3) DEFAULT NULL,
+  `ex_ad` varchar(256) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `q5000`
+--
+
+LOCK TABLES `q5000` WRITE;
+/*!40000 ALTER TABLE `q5000` DISABLE KEYS */;
+INSERT INTO `q5000` VALUES (1,'WHO IS RAM\'S MOTHER?','KAUSHALYA','KAIKEYI','SUMITRA','MANTHARA','A','B',99,1,0,0,'HMM...U SHOULD READ HINDU MYTHOLOGY...ITS A !!KAUSHALYA'),(2,'WHO KILLED BAHUBALI?','BALLAD DEV','DEV SENA','KATTAPA','S.S.RAJMOULLI','C','D',0,0,98,2,'HAHA !!!ITS C !KATTAPA'),(3,'HOW MANY SIDES DOES A NONAGON HAVE?','9','19','90','45','A','C',97,0,3,0,'ITS A-9'),(4,'HOW MANY DAYS ARE THERE IN A LEAP YEAR?','365','366','367','364','B','A',0,100,0,0,'IT IS 366 DAYS.....'),(5,'Complete the Hindi proverb : “Ab Pachhtave hoth kya jab Chidiya Chug gayi________?','DANA','KHET','MOTI','BEEZ','B','D',5,89,4,2,'ITS B--KHET'),(6,'Which of these must a player hold during a Raid in a game of Kabaddi ? ','ANGER','TEARS','BREATH','BALL','C','B',0,5,95,0,'U SHOULD HOLD UR BREATH BCZ BREATH IS THE RIGHT ANSWER....'),(7,'which of these is a computer operating system?','doors','portico','gates','windows','d','c',7,0,0,93,'ITS D-wINDOWS!!!!!!'),(8,'WHO IS YOUR PATERNAL GRANDFATHER\'S DAUGHTER-IN-LAW?','YOUR SISTER','YOUR DAUGHTER','YOUR MOTHER','YOUR NIECE','C','D',2,0,96,2,'ITS YOUR MOTHER!!!!'),(9,'WHICH OF THESE IS NOT A NUMBER?','MILLION','TRILLION','PILLION','BILLION','C','B',0,3,97,0,'HEY I HAVE NEVER HEARD ABOUT PILLION...'),(10,'WHICH OF THESE MACHINE THROUGH WHICH ONE CAN WITHDRAW CASH?','ATP','ATE','ATC','ATM','D','A',5,2,3,90,'ATM IS THE RIGHT ANSWER....');
+/*!40000 ALTER TABLE `q5000` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `q5000000`
+--
+
+DROP TABLE IF EXISTS `q5000000`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `q5000000` (
+  `qno` int(3) DEFAULT NULL,
+  `ques` varchar(256) DEFAULT NULL,
+  `opt_a` varchar(50) DEFAULT NULL,
+  `opt_b` varchar(50) DEFAULT NULL,
+  `opt_c` varchar(50) DEFAULT NULL,
+  `opt_d` varchar(50) DEFAULT NULL,
+  `rt_opt` varchar(1) DEFAULT NULL,
+  `ex_opt50` varchar(1) DEFAULT NULL,
+  `aud_a` int(3) DEFAULT NULL,
+  `aud_b` int(3) DEFAULT NULL,
+  `aud_c` int(3) DEFAULT NULL,
+  `aud_d` int(3) DEFAULT NULL,
+  `ex_ad` varchar(256) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `q5000000`
+--
+
+LOCK TABLES `q5000000` WRITE;
+/*!40000 ALTER TABLE `q5000000` DISABLE KEYS */;
+INSERT INTO `q5000000` VALUES (1,'Which of these is not an official language of UN?','Spanish','French','Italian','English','C','A',28,23,28,21,'Dont You know its Spanish'),(2,'Who was the First Recipient of the Paramveer Chakra?','Shaitan Singh','Albert Ekka','Somnath Sharma','hoshiar Singh','C','D',26,27,24,23,'I think its Somnath Sharma');
+/*!40000 ALTER TABLE `q5000000` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `q50000000`
+--
+
+DROP TABLE IF EXISTS `q50000000`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `q50000000` (
+  `qno` int(3) DEFAULT NULL,
+  `ques` varchar(256) DEFAULT NULL,
+  `opt_a` varchar(50) DEFAULT NULL,
+  `opt_b` varchar(50) DEFAULT NULL,
+  `opt_c` varchar(50) DEFAULT NULL,
+  `opt_d` varchar(50) DEFAULT NULL,
+  `rt_opt` varchar(1) DEFAULT NULL,
+  `ex_opt50` varchar(1) DEFAULT NULL,
+  `aud_a` int(3) DEFAULT NULL,
+  `aud_b` int(3) DEFAULT NULL,
+  `aud_c` int(3) DEFAULT NULL,
+  `aud_d` int(3) DEFAULT NULL,
+  `ex_ad` varchar(256) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `q50000000`
+--
+
+LOCK TABLES `q50000000` WRITE;
+/*!40000 ALTER TABLE `q50000000` DISABLE KEYS */;
+INSERT INTO `q50000000` VALUES (1,'By what name was Port Blair Originally Known?','Port Cornwallis','Port Wellesley','Port Dalhousie','Port bentinck','A','C',26,26,24,24,'I am sorry I am little weak in history..'),(2,'Who was the first secretary of state of the united States of America?','James Madison','John Quincy Adams','Thomas jefferson','James Monroe ','C','A',26,25,27,22,'I think Thomas is the Correct Option');
+/*!40000 ALTER TABLE `q50000000` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `q640000`
+--
+
+DROP TABLE IF EXISTS `q640000`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `q640000` (
+  `qno` int(3) DEFAULT NULL,
+  `ques` varchar(256) DEFAULT NULL,
+  `opt_a` varchar(50) DEFAULT NULL,
+  `opt_b` varchar(50) DEFAULT NULL,
+  `opt_c` varchar(50) DEFAULT NULL,
+  `opt_d` varchar(50) DEFAULT NULL,
+  `rt_opt` varchar(1) DEFAULT NULL,
+  `ex_opt50` varchar(1) DEFAULT NULL,
+  `aud_a` int(3) DEFAULT NULL,
+  `aud_b` int(3) DEFAULT NULL,
+  `aud_c` int(3) DEFAULT NULL,
+  `aud_d` int(3) DEFAULT NULL,
+  `ex_ad` varchar(256) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `q640000`
+--
+
+LOCK TABLES `q640000` WRITE;
+/*!40000 ALTER TABLE `q640000` DISABLE KEYS */;
+INSERT INTO `q640000` VALUES (1,'WHICH RIVER LENT ITS NAME TO INDIA?','BHAGIRATHI','KRISHNA','GANGA','INDUS','D','A',34,20,2,44,'I THINK ITS INDUS......'),(2,'ON WHICH RIVER IS THE BHAKRA NANGAL DAM OF INDIA BUILT?','GANGA','YAMUNA','SUTLEJ','BRAHMAPUTA','C','B',18,32,48,2,'I THINK ITS SUTLEJ'),(3,'WHO WAS INDIA\'S FIRST DEPUTY PRIME MINISTER?','B.R. AMBEDKAR','SARDAR BALDEV SINGH','MAULANA ABUL KALAM AZAD','SARDAR VALLABH BHAI PATEL','D','B',32,15,13,40,'I\'M CONFUSED BETWEEN OPTION A & D ...U DECIDE>>>'),(4,'WHICH LIVING BIRD LAYS THE WORLD\'S SMALLEST EGG?','WOOD PECKER','BEE HUMMING BIRD','GULLS','HORNBILL','B','A',28,50,20,2,'IT SHOULD BE OPTION B..........'),(5,'WHICH LIVING BIRD LAYS THE WORLD\'S LARGEST EGG?','OWL','OSTRICH','VULTURE','EAGLE','B','C',11,76,6,7,'OSTRICH ..OF COURSE'),(6,'IN OLYMPIC ARCHERY WHAT IS THE COLOUR OF THE CENTRAL RING OF THE TARGET?','WHITE','RED','YELLOW','BLACK','C','B',14,17,62,7,'DONT U KNOW,ITS YELLOW'),(7,'HOW MANY LANGUAGES ARE LISTED IN THE 8TH SCHEDULE OF THE INDIAN CONSTITUTION?','12','15','22','21','C','B',23,15,47,15,'I THINK IT IS 22...'),(8,'WHICH GULF WILL ONE HAVE TO CROSS TO GET TO DIU FROM DAMAN?','GULF OF KUTCH','GULF OF MANNAR','GULF OF MARTABAN','GULF OF KHAMBAT','D','A',19,18,24,39,'ITS D.......'),(9,'WHERE ARE THE HEADQUATERS OF OPEC?','TEHTRAN','RIYADH','VIENNA','GENEVA','C','D',12,14,58,16,'C OR D......U DECIDE'),(10,'WHO WAS THE LAST JAIN TIRTHANKAR?','PARSHAVNATH','MAHAVIRA','NEMINATH','RISHABHDEV','B','C',19,40,12,29,'MAHAVIRA OF COURSE.........');
+/*!40000 ALTER TABLE `q640000` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `q70000000`
+--
+
+DROP TABLE IF EXISTS `q70000000`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `q70000000` (
+  `qno` int(3) DEFAULT NULL,
+  `ques` varchar(256) DEFAULT NULL,
+  `opt_a` varchar(50) DEFAULT NULL,
+  `opt_b` varchar(50) DEFAULT NULL,
+  `opt_c` varchar(50) DEFAULT NULL,
+  `opt_d` varchar(50) DEFAULT NULL,
+  `rt_opt` varchar(1) DEFAULT NULL,
+  `ex_opt50` varchar(1) DEFAULT NULL,
+  `aud_a` int(3) DEFAULT NULL,
+  `aud_b` int(3) DEFAULT NULL,
+  `aud_c` int(3) DEFAULT NULL,
+  `aud_d` int(3) DEFAULT NULL,
+  `ex_ad` varchar(256) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `q70000000`
+--
+
+LOCK TABLES `q70000000` WRITE;
+/*!40000 ALTER TABLE `q70000000` DISABLE KEYS */;
+INSERT INTO `q70000000` VALUES (1,'Which Actor Captained America in his Only apperance in Test Cricket?','William Holden','C Aubrey Smith','Alan Ladd','W C Fields','B','A',22,13,36,29,'I think Its may be Smith...not sure'),(2,'Who became the first recipient of Jnanpith Award for work in Sanskrit?','Gurdial Singh','Satyavrat Shastri','Bhai Veer Singh','Nirmal Verma','B','D',27,28,20,25,'It may be B or C....');
+/*!40000 ALTER TABLE `q70000000` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `q80000`
+--
+
+DROP TABLE IF EXISTS `q80000`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `q80000` (
+  `qno` int(3) DEFAULT NULL,
+  `ques` varchar(256) DEFAULT NULL,
+  `opt_a` varchar(50) DEFAULT NULL,
+  `opt_b` varchar(50) DEFAULT NULL,
+  `opt_c` varchar(50) DEFAULT NULL,
+  `opt_d` varchar(50) DEFAULT NULL,
+  `rt_opt` varchar(1) DEFAULT NULL,
+  `ex_opt50` varchar(1) DEFAULT NULL,
+  `aud_a` int(3) DEFAULT NULL,
+  `aud_b` int(3) DEFAULT NULL,
+  `aud_c` int(3) DEFAULT NULL,
+  `aud_d` int(3) DEFAULT NULL,
+  `ex_ad` varchar(256) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `q80000`
+--
+
+LOCK TABLES `q80000` WRITE;
+/*!40000 ALTER TABLE `q80000` DISABLE KEYS */;
+INSERT INTO `q80000` VALUES (1,'NAME THE FAMOUS BATTLE THAT RANA PRATAP FOUGHT AGAINST AKBAR\'S FORCES?','HALDIGHATI','PLASSEY','KALINGA','PANIPAT','A','D',69,11,12,18,'ITS THE FAMOUS BATTLE OF HALDIGHATI'),(2,'WHO BUILT THE RED FORT IN DELHI','SHAH JAHAN','AKBAR','QUTUB-UD-DIN-AIBAK','SHER SHAH SURI','A','B',48,42,6,4,'SHAH JAHAN BUILT IT...'),(3,'AMPHIBIANS,SUCH AS FROGS,CAN LIVE ON WATER AND ON LAND.WHERE ARE THEY USUALLY BORN?','IN ICE','IN WATER','IN TREES','ON LAND','B','D',0,67,3,30,'ITS SIMPLE-IN WATER'),(4,'which is india\'s first colour film?','alam ara','kisan kanya','mother india','taj mahal','b','d',28,50,20,2,'kisan kanya was the first indigenously made color film'),(5,'MUMTAZ JEHAN BEGUM DEHLAVI WAS BETTER KNOWN IN THE HINDI FILM WORLD AS...','HELEN','TABASSUM','MADHUBALA','WAHEEDA REHMAN','C','B',24,4,62,10,'SHE WAS BETTER KNOWN AS MADHUBALA....'),(6,'WHO IS THE AUTHOR OF MELUHA(SHIVA TRIOLOGY)?','NIKITA SINGH','AMISH TRIPATHI','CHETAN BHAGAT','DURJOY DUTTA','B','C',18,43,37,2,'HMM.ITS AMISH TRIPATHI...'),(7,'WHO INVENTED NUMBER ZERO?','ARYABHATTA','VARAH MIHIR','CHANAKYA','SAMUDRA GUPTA','A','C',82,4,8,6,'ITS SO EASY!!! OF COURSE OPTION A'),(8,'WHICH OF THESE IS NOT A COMPUTER?','APTIVA','MACINTOSH','ACORN','PASEO','D','B',15,16,14,55,'PASEO IS NOT A COMPUTER!!!'),(9,'WHAT DOES SSL STAND FOR?','SUPERUSER SYSTEM LOGIN','SYSTEM SOCKET LAYER','SECURE SYSTEM LOGIN','SECURE SOCKET LAYER','D','C',22,21,24,33,'HMM.ITS D....IT IS PROTOCOL DEVELOPED BY NETSCAPE TO ALLOW SECURE CONNECTION OVER NET'),(10,'WHICH COMPANY PRODUCES CLASSMATE PRODUCTS?','ITC','HINDUSTAN UNILEVER','CIPLA','SAHARA','A','B',43,38,11,8,'HMM...ITC ..LOCK KR DIYA JAE...');
+/*!40000 ALTER TABLE `q80000` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2021-03-21 10:00:19
